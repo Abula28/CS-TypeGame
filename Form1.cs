@@ -71,6 +71,7 @@
             Random random = new Random();
             if (textBox1.Text == label2.Text)
             {
+                label4.Text = "";
                 int randomText = random.Next(0, randomStrings.Length);
                 label2.Text = randomStrings[randomText];
                 score++;
@@ -79,6 +80,7 @@
             }
             else
             {
+                label4.Text = "სწორად შეიყვანე სიტყვა";
                 return;
             }
         }
