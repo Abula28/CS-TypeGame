@@ -30,17 +30,17 @@
         {
             label1 = new Label();
             label2 = new Label();
-            button1 = new Button();
             textBox1 = new TextBox();
             label3 = new Label();
             label4 = new Label();
+            label5 = new Label();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Georgia", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(147, 18);
+            label1.Location = new Point(165, 67);
             label1.Name = "label1";
             label1.Size = new Size(340, 25);
             label1.TabIndex = 0;
@@ -59,23 +59,6 @@
             label2.Text = "ეს შეიცვლება";
             label2.TextAlign = ContentAlignment.TopCenter;
             label2.Click += label2_Click;
-            // 
-            // button1
-            // 
-            button1.BackColor = SystemColors.ActiveCaption;
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.BorderColor = Color.White;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = Color.Gold;
-            button1.Location = new Point(212, 303);
-            button1.Name = "button1";
-            button1.Size = new Size(192, 30);
-            button1.TabIndex = 2;
-            button1.Text = "Click";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
             // 
             // textBox1
             // 
@@ -101,11 +84,23 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.ForeColor = Color.Red;
-            label4.Location = new Point(225, 207);
+            label4.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(12, 9);
             label4.Name = "label4";
-            label4.Size = new Size(0, 15);
+            label4.Size = new Size(110, 28);
             label4.TabIndex = 5;
+            label4.Text = "ტაიმერი";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = Color.Chocolate;
+            label5.Location = new Point(224, 296);
+            label5.Name = "label5";
+            label5.Size = new Size(79, 21);
+            label5.TabIndex = 6;
+            label5.Text = "შედეგი";
             // 
             // Form1
             // 
@@ -114,10 +109,10 @@
             BackColor = SystemColors.Control;
             BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(672, 450);
+            Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(textBox1);
-            Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Form1";
@@ -134,5 +129,6 @@
         private TextBox textBox1;
         private Label label3;
         private Label label4;
+        private Label label5;
     }
 }
