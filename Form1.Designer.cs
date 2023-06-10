@@ -96,7 +96,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.Chocolate;
-            label5.Location = new Point(224, 296);
+            label5.Location = new Point(165, 295);
             label5.Name = "label5";
             label5.Size = new Size(79, 21);
             label5.TabIndex = 6;
